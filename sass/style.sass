@@ -1,0 +1,111 @@
+@import 'bourbon/bourbon'
+
+$text-color: #2e3f4a
+
+html
+	background-color: #2a2b2a
+
+body
+	margin: 0px
+
+.container
+	overflow-x: hidden
+
+.belt
+	width: 200%
+	position: relative
+	left: -100%
+	+transition(all, 200ms)
+
+.menu-wrap, .billett-wrap
+	width: 50%
+	float: left
+
+.menu-wrap
+	font-family: $helvetica
+	margin: 5px auto
+	+clearfix
+	
+	h1
+		text-align: center
+		color: white
+		margin: 25px 5px
+		padding: 0		
+
+	select
+		width: 100%
+		padding: 5px
+		margin-bottom: 10px
+		font-size: 48px
+
+	button
+		float: right
+		padding: 5px
+		+button(#85b200)
+		+size(100% 100px)
+		font-size: 48px
+
+	p
+		display: inline-block
+		text-align: center
+		margin-top: 25px
+		font-size: 24px
+		color: shade(white, 60%)
+		text-shadow: 2px 2px tint(black, 5%)
+
+.billett-wrap
+	font-family: $arial
+	font-weight: bold
+	margin: 0
+	padding: 0
+	height: 960px
+	background: url("/img/billett-2.jpg")
+	background-repeat: no-repeat
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+	.menu-return
+		height: 90px
+		width: 90px
+		position: absolute
+
+
+	#gyldig
+		margin: 143px 0px 0px 340px
+		font-size: 190%
+		color: #2e3f4a
+		position: absolute
+		padding: 0
+
+	#timer
+		margin: 200px 0px 0px 388px
+		font-size: 310%
+		color: #85b200
+		position: absolute
+		padding: 0
+
+	#green-bar
+		margin: 204px 0px 0px 27px
+		position: relative
+
+	#type-billett
+		margin: 292px 0px 0px 65px
+		font-size: 30px
+		color: #2e3f4a
+		position: absolute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
